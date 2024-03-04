@@ -33,7 +33,7 @@ export default function Navbar() {
         </NavbarItem>
 				<NavbarItem>
 					<NavbarMenuToggle
-          	className="md:hidden"
+          	className="md:hidden p-4"
         	/>
 				</NavbarItem>
       </NavbarContent>
