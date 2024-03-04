@@ -10,7 +10,9 @@ export default function Home() {
 	return (
 		<section className='flex flex-col items-center justify-center gap-4 py-8 md:py-10'>
 			<div className='inline-block max-w-lg text-center justify-center'>
-				Welcome to TealBits Tech Solutions.
+				<h1 className='text-5xl md:text-8xl text-center md:text-left font-bold'>
+					Welcome to TealBit Tech Solutions
+				</h1>
 			</div>
 
 			<div className='mt-8'>

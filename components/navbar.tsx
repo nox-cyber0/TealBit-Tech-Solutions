@@ -1,67 +1,56 @@
-import {
-	Navbar as NextUINavbar,
-	NavbarBrand,
-	NavbarContent,
-	NavbarItem,
-	NavbarMenu,
-	NavbarMenuToggle,
-	NavbarMenuItem,
-} from '@nextui-org/navbar';
-import { Button } from '@nextui-org/button';
-import { Link } from '@nextui-org/link';
+import { Navbar as NextNav, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/navbar";
+import { Link } from "@nextui-org/link";
+import { Button } from "@nextui-org/button";
 import { Logo } from './icons';
 
-import { siteConfig } from '@/config/site';
+import {siteConfig} from '@/config/site'
+export default function Navbar() {
 
-const Navbar = () => {
-	return (
-		<NextUINavbar maxWidth='xl'>
-			<NavbarContent className='flex justiify-start'>
-				<NavbarBrand>
-					<Logo />
-					<p className='font-bold text-sm font-mono'>TealBit</p>
-				</NavbarBrand>
-			</NavbarContent>
+  return (
+    <NextNav>
+      <NavbarContent>
+        {/* <NavbarMenuToggle
+          className="md:hidden"
+        /> */}
+        <NavbarBrand>
+          <Logo />
+          <p className="font-bold text-inherit font-mono">TealBit</p>
+        </NavbarBrand>
+      </NavbarContent>
 
-			<NavbarContent className='hidden md:flex gap-4 justify-center'>
-				{siteConfig.navItems.map((item) => (
-					<NavbarItem
-						key={item.href}
-						className='gap-4'
-					>
-						<Link href={item.href}>{item.label}</Link>
+      <NavbarContent className="hidden md:flex gap-4" justify="center">
+        {siteConfig.navItems.map((item) => (
+					<NavbarItem key={item.href}>
+						<Link href={item.href} color='foreground'>{item.label}</Link>
 					</NavbarItem>
 				))}
-			</NavbarContent>
-
-			<NavbarContent>
-				<NavbarItem className='hidden md:flex justify-end'>
-					<Button
-						as={Link}
-						color='primary'
-						href='/contact'
-					>
-						Get A Quote
-					</Button>
+      </NavbarContent>
+      <NavbarContent justify="end">
+        <NavbarItem className='hidden md:flex'>
+          <Button as={Link} color="primary" href="/contact" variant="flat">
+            Get A Quote
+          </Button>
+        </NavbarItem>
+				<NavbarItem>
+					<NavbarMenuToggle
+          	className="md:hidden"
+        	/>
 				</NavbarItem>
-				<NavbarMenuToggle className='md:hidden' />
-			</NavbarContent>
-			<NavbarMenu>
-				{siteConfig.navMenuItems.map((item) => (
-					<NavbarMenuItem key={item.href}>
-						<Link
-							color='primary'
-							className='w-full'
-							href={item.href}
-							size='lg'
-						>
-							{item.label}
-						</Link>
-					</NavbarMenuItem>
-				))}
-			</NavbarMenu>
-		</NextUINavbar>
-	);
-};
-
-export default Navbar;
+      </NavbarContent>
+      <NavbarMenu>
+        {siteConfig.navMenuItems.map((item) => (
+          <NavbarMenuItem key={item.href}>
+            <Link
+              color="foreground"
+              className="w-full"
+              href={item.href}
+              size="lg"
+            >
+              {item.label}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+    </NextNav>
+  );
+}
