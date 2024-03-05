@@ -1,9 +1,7 @@
-import { title } from "@/components/primitives";
+import { title } from '@/components/primitives';
 
-export default function AboutPage() {
-	return (
-		<div>
-			<h1 className={title()}>About</h1>
-		</div>
-	);
-}
+const About = () => {
+	return <div className={title()}>About</div>;
+};
+
+export default About;

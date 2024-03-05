@@ -1,31 +1,18 @@
-import { Link } from '@nextui-org/link';
-import { Snippet } from '@nextui-org/snippet';
-import { Code } from '@nextui-org/code';
-import { button as buttonStyles } from '@nextui-org/theme';
-import { siteConfig } from '@/config/site';
-import { title, subtitle } from '@/components/primitives';
-import { GithubIcon } from '@/components/icons';
-
 export default function Home() {
 	return (
-		<section className='flex flex-col items-center justify-center gap-4 py-8 md:py-10'>
-			<div className='inline-block max-w-lg text-center justify-center'>
-				<h1 className='text-5xl md:text-8xl text-center md:text-left font-bold'>
-					Welcome to TealBit Tech Solutions
-				</h1>
-			</div>
-
-			<div className='mt-8'>
-				<Snippet
-					hideSymbol
-					hideCopyButton
-					variant='flat'
-				>
-					<span>
-						Get started by editing <Code color='primary'>app/page.tsx</Code>
-					</span>
-				</Snippet>
-			</div>
-		</section>
+		<>
+			<section className='block w-full md:flex md:h-screen justify-center items-center'>
+				<section className='w-full md:w-2/3 text-center md:text-left h-full'>
+					<h1 className='text-5xl md:text-8xl font-bold'>
+						Welcome to TealBit Tech Solutions
+					</h1>
+					<p className='text-sm md:text-base font-semibold'>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+						dolorem quos ratione minima earum voluptatum
+					</p>
+				</section>
+				<section className='w-full md:w-1/3 bg-blue-700 font-bold text-lg h-80 md:h-full'></section>
+			</section>
+		</>
 	);
 }

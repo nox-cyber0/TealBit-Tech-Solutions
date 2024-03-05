@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: 'TealBit Tech Solutions',
+	name: 'TealBit',
 	description: '',
 	navItems: [
 		{
