@@ -33,7 +33,7 @@ export default function Navbar() {
 					<NavbarItem key={item.href}>
 						<Link
 							href={item.href}
-							color='foreground'
+							className='text-primary hover:text-primary-dark'
 						>
 							{item.label}
 						</Link>
@@ -68,6 +68,16 @@ export default function Navbar() {
 						</Link>
 					</NavbarMenuItem>
 				))}
+				<NavbarItem className='hidden md:flex'>
+					<Button
+						as={Link}
+						color='primary'
+						href='/contact'
+						variant='flat' 
+					>
+						Get A Quote
+					</Button>
+				</NavbarItem>
 			</NavbarMenu>
 		</NextNav>
 	);

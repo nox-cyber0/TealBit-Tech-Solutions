@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ############# Teal Palette #############
+    teal-50: #f5fafc
+    teal-100: #e0f2f1
+    teal-200: #c2e6e0
+    teal-300: #99d9ce
+    teal-400: #70cbc4
+    teal-500: #40e0d0 (base colour)
+    teal-600: #26c4a1
+    teal-700: #00a77a
+    teal-800: #008a65
+    teal-900: #006d4f
+    teal-950: #004c38 */
+
+/* ############# Turqoise Palette #############
+    turqoise-50: #fafafa
+    turqoise-100: #f0ffff
+    turqoise-200: #e0ffff
+    turqoise-300: #99d9ce
+    turqoise-400: #c2ffff
+    turqoise-500: #008080 (base colour)
+    turqoise-600: #006062
+    turqoise-700: #004044
+    turqoise-800: #002026
+    turqoise-900: #000033
+    turqoise-950: #00005e */
+
+.text-primary {
+	color: #008080;
+}
+
+.text-primary-dark {
+	color: #004044;
+}
+
+.bg-primary {
+	background-color: #008080;
+}
+
+.bg-primary-dark {
+  color: #004044;
+}
+
+.text-secondary {
+	color: #40e0d0;
+}
+
+.text-secondary-dark {
+  color: #00a77a;
+}
+
+.bg-secondary {
+	background-color: #40e0d0;
+}
+
+.bg-secondary-dark {
+  color: #00a77a;
+}
+
+.flex-center {
+	@apply justify-center items-center;
+}
