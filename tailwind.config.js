@@ -18,7 +18,7 @@ module.exports = {
 			addCommomColors: true,
 			defaultTheme: 'light',
 			defaultExtendTheme: 'light',
-			laayout: {},
+			layout: {},
 			themes: {
 				light: {
 					colors: {

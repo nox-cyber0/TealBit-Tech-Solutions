@@ -5,17 +5,18 @@ const Hero = () => {
 	return (
 		<section className='w-full block md:flex md:h-screen'>
 			<div className='w-full md:w-2/3 h-full block md:flex flex-center'>
-				<div className='px-8 md:px-12'>
+				<div className='pt-12 px-6 md:px-12'>
 					<h1
-						className='title-md text-center md:text-left'
+						className='text-5xl md:text-7xl lg:text-8xl font-bold text-center md:text-left'
 						color='foreground'
 					>
 						Welcome to
-						<p className='title-lg text-primary'>TealBit Inc.</p>
+						<p className='text-6xl md:text-8xl lg:text-9xl font-bold text-center md:text-left text-primary'>
+							TealBit Inc.
+						</p>
 					</h1>
-					<p className='subtitle-sm py-4'>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
-						adipisci dolorem praesentium molestiae fuga corporis nemo
+					<p className='text-sm sm:text-base font-normal py-4 text-foreground text-center md:text-left'>
+						Providing innovative solutions for your tech needs.
 					</p>
 					<div className='flex flex-wrap sm:flex-nowrap w-full flex-center md:justify-start font-semibold gap-1 sm:gap-4 my-4'>
 						<Button
