@@ -28,6 +28,10 @@ module.exports = {
 							foreground: '#F6FAFE',
 							DEFAULT: '#008080',
 						},
+						secondary: {
+							foreground: '#F6FAFE',
+							DEFAULT: '#004044',
+						},
 					},
 				},
 				dark: {
@@ -37,6 +41,10 @@ module.exports = {
 						primary: {
 							foreground: '#1E293B',
 							DEFAULT: '#008080',
+						},
+						secondary: {
+							foreground: '#F6FAFE',
+							DEFAULT: '#004044',
 						},
 					},
 				},

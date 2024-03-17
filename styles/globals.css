@@ -2,31 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ############# Teal Palette #############
-    teal-50: #f5fafc
-    teal-100: #e0f2f1
-    teal-200: #c2e6e0
-    teal-300: #99d9ce
-    teal-400: #70cbc4
-    teal-500: #40e0d0 (base colour)
-    teal-600: #26c4a1
-    teal-700: #00a77a
-    teal-800: #008a65
-    teal-900: #006d4f
-    teal-950: #004c38 */
+/* ############# Turquoise Palette #############
+    Turquoise-50: #f5fafc
+    Turquoise-100: #e0f2f1
+    Turquoise-200: #c2e6e0
+    Turquoise-300: #99d9ce
+    Turquoise-400: #70cbc4
+    Turquoise-500: #40e0d0 (base colour)
+    Turquoise-600: #26c4a1
+    Turquoise-700: #00a77a
+    Turquoise-800: #008a65
+    Turquoise-900: #006d4f
+    Turquoise-950: #004c38 */
 
-/* ############# Turqoise Palette #############
-    turqoise-50: #fafafa
-    turqoise-100: #f0ffff
-    turqoise-200: #e0ffff
-    turqoise-300: #99d9ce
-    turqoise-400: #c2ffff
-    turqoise-500: #008080 (base colour)
-    turqoise-600: #006062
-    turqoise-700: #004044
-    turqoise-800: #002026
-    turqoise-900: #000033
-    turqoise-950: #00005e */
+/* ############# Teal Palette #############
+    Teal-50: #fafafa
+    Teal-100: #f0ffff
+    Teal-200: #e0ffff
+    Teal-300: #99d9ce
+    Teal-400: #c2ffff
+    Teal-500: #008080 (base colour)
+    Teal-600: #006062
+    Teal-700: #004044
+    Teal-800: #002026
+    Teal-900: #000033
+    Teal-950: #00005e */
+
+.title-lg {
+	@apply text-6xl md:text-8xl lg:text-9xl font-bold text-center md:text-left text-primary;
+}
+
+.title-md {
+	@apply text-5xl md:text-7xl lg:text-8xl font-bold text-center md:text-left;
+}
+
+.title-base {
+	@apply text-xl md:text-2xl lg:text-4xl font-bold text-left;
+}
+
+.title-sm {
+	@apply text-sm md:text-base lg:text-lg font-bold text-left;
+}
+
+.subtitle {
+	@apply text-lg sm:text-xl font-semibold text-center md:text-left;
+}
+
+.subtitle-lg {
+	@apply text-2xl md:text-3xl font-semibold text-left;
+}
+
+.subtitle-sm {
+	@apply text-sm sm:text-base;
+}
 
 .flex-center {
 	@apply justify-center items-center;

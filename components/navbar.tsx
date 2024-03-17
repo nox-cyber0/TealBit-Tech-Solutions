@@ -16,13 +16,15 @@ import { siteConfig } from '@/config/site';
 export default function Navbar() {
 	return (
 		<NextNav
-			className='fixed'
 			shouldHideOnScroll
+			isBlurred='false'
 		>
 			<NavbarContent>
 				<NavbarBrand>
-					<Logo />
-					<p className='font-bold text-inherit font-mono'>TealBit</p>
+					<Link href='/'>
+						<Logo />
+						<p className='font-bold text-inherit font-mono'>TealBit</p>
+					</Link>
 				</NavbarBrand>
 			</NavbarContent>
 
@@ -32,7 +34,12 @@ export default function Navbar() {
 			>
 				{siteConfig.navItems.map((item) => (
 					<NavbarItem key={item.href}>
-						<Link href={item.href}>{item.label}</Link>
+						<Link
+							href={item.href}
+							className='data-[active=true]:font-bold'
+						>
+							{item.label}
+						</Link>
 					</NavbarItem>
 				))}
 			</NavbarContent>
