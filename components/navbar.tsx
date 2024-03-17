@@ -17,7 +17,6 @@ export default function Navbar() {
 	return (
 		<NextNav
 			shouldHideOnScroll
-			isBlurred='false'
 		>
 			<NavbarContent>
 				<NavbarBrand>
