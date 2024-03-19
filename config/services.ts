@@ -17,7 +17,7 @@ export const serviceConfig = {
 		{
 			title: 'Digital Marketing',
 			description:
-				'Reach your audience and grow your business witht our digital marketing expertise.',
+				'Reach your audience and grow your business with our digital marketing expertise.',
 			route: '/digital-marketing',
 		},
 	],

@@ -15,34 +15,36 @@ module.exports = {
 	plugins: [
 		nextui({
 			prefix: 'nextui',
-			addCommomColors: true,
+			addCommonColors: true,
 			defaultTheme: 'light',
 			defaultExtendTheme: 'light',
 			layout: {},
 			themes: {
 				light: {
 					colors: {
-						background: '#F6FAFE',
-						foreground: '#1E293B',
+						background: '#F8FAFC',
+						foreground: '#0F172A',
 						primary: {
-							foreground: '#F6FAFE',
+							foreground: '#F8FAFC',
 							DEFAULT: '#008080',
 						},
 						secondary: {
-							foreground: '#F6FAFE',
+							background: '#F6FAFE',
+							foreground: '#1E293B',
 							DEFAULT: '#004044',
 						},
 					},
 				},
 				dark: {
 					colors: {
-						background: '#1E293B',
-						foreground: '#F6FAFE',
+						background: '#0F172A',
+						foreground: '#64748B',
 						primary: {
-							foreground: '#1E293B',
+							foreground: '#0F172A',
 							DEFAULT: '#008080',
 						},
 						secondary: {
+							background: '#1E293B',
 							foreground: '#F6FAFE',
 							DEFAULT: '#004044',
 						},
@@ -52,3 +54,5 @@ module.exports = {
 		}),
 	],
 };
+
+// 1E293B

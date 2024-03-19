@@ -6,10 +6,7 @@ const Hero = () => {
 		<section className='w-full block md:flex md:h-screen'>
 			<div className='w-full md:w-2/3 h-full block md:flex flex-center'>
 				<div className='pt-12 px-6 md:px-12'>
-					<h1
-						className='text-5xl md:text-7xl lg:text-8xl font-bold text-center md:text-left'
-						color='foreground'
-					>
+					<h1 className='text-5xl md:text-7xl lg:text-8xl font-bold text-center md:text-left text-secondary-foreground'>
 						Welcome to
 						<p className='text-6xl md:text-8xl lg:text-9xl font-bold text-center md:text-left text-primary'>
 							TealBit Inc.

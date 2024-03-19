@@ -4,6 +4,7 @@ import { siteConfig } from '@/config/site';
 import { fontSans } from '@/config/fonts';
 import { Providers } from './providers';
 import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 import clsx from 'clsx';
 
 export const metadata: Metadata = {
@@ -46,6 +47,7 @@ export default function RootLayout({
 						<main className='container mx-auto max-w-7xl flex-grow'>
 							{children}
 						</main>
+						<Footer />
 					</div>
 				</Providers>
 			</body>
